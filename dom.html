@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dom</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="abc">this has id of abc</div>
+    <div class="button-wrapper">
+        <button class="red">RED</button>
+        <button class="blue" id="blue" onclick="change()">BLUE</button>
+    </div>
+    </div>
+
+<style>
+    .container{
+        height: 400px;
+        width: 400px;
+        background: #aaa;
+        position: relative;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        position: absolute;
+        transition: all 2s ease-in-out;
+        margin: 4rem;
+        background-color: blueviolet;
+    }
+    .button-wrapper{
+        position: absolute;
+        top: 300px;
+        margin-left: 8rem;
+    }
+</style>
+
+
+<script>
+    function change() {
+       var change = document.getElementsById("abc");
+       change.style.backgroung-color
+    }
+
+  
+</script>
+</body>
+</html>

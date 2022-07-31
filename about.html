@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+         <div class="logo">
+           <a href="index.html"><i class="fa fa-diamond fa-2x"></i></a>
+           ><span>EduNET</span>
+         </div>
+         <div class="nav-links" id="nav-links">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+           <ul>
+            <li><a href="about.html"> ABOUT</a></li>
+            <li><a href="courses.html"> COURSES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="Index.html"> HOME</a></li>
+           </ul>
+           </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+         <h1> About Us</h1>
+       </section>
+
+      <!-- About Us Content-->
+       
+      <div class="about-us">
+        <div class="about-col">
+         <h1> We are the World's largest<br> University</h1>
+         <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque qui reiciendis quibusdam!
+         </p>
+         <a href="" class="hero-btn red-btn"> EXPLORE NOW</a>
+        </div>
+       <div class="about-col">
+        <img src="./classrooms/class2.jpg" alt="">
+       </div>
+      </div>
+   
+   
+        <!-- FOOTER SECTION -->
+         <section class="footer">
+          <h2> About Us</h2>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Alias deserunt sit voluptatibus fuga quasi, accusantium.
+          </p>
+           <div class="icons">
+             <i class="fa fa-facebook-square fa-2x"></i>
+             <i class="fa fa-twitter-square fa-2x"></i>
+             <i class="fa fa-instagram fa-2x"></i>
+             <i class="fa fa-linkedin-square fa-2x"></i>
+           </div>
+            <h4> Made with<i class="fa fa-heart"></i> by Web Design Class</h4>
+         </section>
+   
+       <script> 
+         var navLinks = document.getElementById("navLinks");
+         function showMenu() {
+           navLinks.style.right = "0";
+         }
+         function hideMenu() {
+           navLinks.style.right = "-200px";
+         }
+     </script>
+   </body> 
+</body>
+</html>

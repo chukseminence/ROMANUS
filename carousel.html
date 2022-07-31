@@ -1,0 +1,50 @@
+z<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Owl Carousel Demo</title>
+    <link rel="stylesheet" href="../owl/css/owl.carousel.css">
+    <link rel="stylesheet" href="../owl/css/animate.css">
+    <style>
+       .container {
+           width: 100vw;
+           height: 100vh;
+       }
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       img{
+        width: 100vw;
+        height: 100vh;
+       }
+    </style>
+</head>
+<body>
+    <div class="container owl-carousel">
+     <img src="../images/details1.jpg">
+     <img src="../images/details2.jpg">
+     <img src="../images/details3.jpg">
+     <img src="../images/details1.jpg">
+     <img src="../images/details2.jpg">
+    </div>
+    
+
+    <script src="../owl/js/jquery.js"></script>
+    <script src="../owl/js/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel( {
+          items: 1,
+          autoplay: true,
+          loop: true,
+          autoplaySpeed: 200,
+          animateOut: "fadeout",
+        });
+      });
+    </script>
+</body>
+</html>

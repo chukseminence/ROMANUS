@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <ul>
+        <li data-tab-target="#home">Home</li>
+        <li data-tab-target="#prising">Prising</li>
+        <li data-tab-target="#about">About</li>
+    </ul>
+
+    <div class="table-content">
+        <div id="home" data-tab-content>
+            <h1>Home</h1>
+            <p>This is home</p>
+        </div>
+
+        <div class="prising" data-tab-content>
+            <h1>prising</h1>
+            <p>some info on prising</p>
+        </div>
+
+        <div class="about" data-tab-content>
+            <h1>About</h1>
+            <p>let me tell you about me</p>
+        </div>
+    </div>
+    <style>
+            [data-tab-content] {
+                display: none;
+            }
+            .active[data-tab-content]{
+                display: block;
+            }
+            #home{
+                color: blue;
+            }
+        </style>
+
+
+<script>
+    const tabs= document.querySelectorAll('[data-tab-target]')
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget)
+            target.classList.add('active')
+        })
+    })
+</script>
+</body>
+</html>

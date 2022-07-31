@@ -1,0 +1,23 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  table.center {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+td:nth-child(even), th:nth-child(even) {
+    background-color: #6d46a1;
+  }
+
+body {
+    background-color: rgba(38, 85, 26, 0.63);
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 200%;
+  }

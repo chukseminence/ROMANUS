@@ -1,0 +1,9 @@
+[data-tabcontent] {
+    display: none;
+}
+.active[data-tab-content]{
+    display: block;
+}
+.home{
+    color: blue;
+}
